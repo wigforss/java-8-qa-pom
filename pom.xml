@@ -9,7 +9,7 @@
     </parent>
 
     <artifactId>java-8-qa-pom</artifactId>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.2-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>QA-Parent</name>
@@ -19,7 +19,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <qa-rules.version>0.1</qa-rules.version>
+        <qa-rules.version>0.2</qa-rules.version>
     </properties>
 
     <scm>
@@ -522,7 +522,74 @@
               </plugins>
           </build>
       </profile>
-
-
+      <profile>
+          <id>dependency-check</id>
+          <activation>
+              <property>
+                  <name>run.qa</name>
+                  <value>true</value>
+              </property>
+          </activation>
+          <properties>
+              <dependencyCheck.skip>false</dependencyCheck.skip>
+              <dependencyCheck.version>5.2.4</dependencyCheck.version>
+              <dependencyCheck.skipProvidedScope>false</dependencyCheck.skipProvidedScope>
+              <dependencyCheck.skipRuntimeScope>false</dependencyCheck.skipRuntimeScope>
+              <dependencyCheck.skipSystemScope>false</dependencyCheck.skipSystemScope>
+              <dependencyCheck.skipTestScope>true</dependencyCheck.skipTestScope>
+              <dependencyCheck.failBuildOnCVSS>11</dependencyCheck.failBuildOnCVSS>
+              <dependencyCheck.failBuildOnAnyVulnerability>false</dependencyCheck.failBuildOnAnyVulnerability>
+              <dependencyCheck.failOnError>true</dependencyCheck.failOnError>
+              <dependencyCheck.format>HTML</dependencyCheck.format>
+              <dependencyCheck.prettyPrint>true</dependencyCheck.prettyPrint>
+          </properties>
+          <reporting>
+              <plugins>
+                  <plugin>
+                      <groupId>org.owasp</groupId>
+                      <artifactId>dependency-check-maven</artifactId>
+                      <version>${dependencyCheck.version}</version>
+                      <configuration>
+                          <format>${dependencyCheck.format}</format>
+                          <prettyPrint>${dependencyCheck.prettyPrint}</prettyPrint>
+                      </configuration>
+                  </plugin>
+              </plugins>
+          </reporting>
+          <build>
+              <pluginManagement>
+                  <plugins>
+                      <plugin>
+                          <groupId>org.owasp</groupId>
+                          <artifactId>dependency-check-maven</artifactId>
+                          <version>${dependencyCheck.version}</version>
+                          <configuration>
+                              <skip>${dependencyCheck.skip}</skip>
+                              <skipProvidedScope>${dependencyCheck.skipProvidedScope}</skipProvidedScope>
+                              <skipRuntimeScope>${dependencyCheck.skipRuntimeScope}</skipRuntimeScope>
+                              <skipSystemScope>${dependencyCheck.skipSystemScope}</skipSystemScope>
+                              <skipTestScope>${dependencyCheck.skipTestScope}</skipTestScope>
+                              <failBuildOnCVSS>${dependencyCheck.failBuildOnCVSS}</failBuildOnCVSS>
+                              <failBuildOnAnyVulnerability>${dependencyCheck.failBuildOnAnyVulnerability}</failBuildOnAnyVulnerability>
+                              <failOnError>${dependencyCheck.failOnError}</failOnError>
+                          </configuration>
+                      </plugin>
+                  </plugins>
+              </pluginManagement>
+              <plugins>
+                  <plugin>
+                      <groupId>org.owasp</groupId>
+                      <artifactId>dependency-check-maven</artifactId>
+                      <executions>
+                          <execution>
+                              <goals>
+                                  <goal>check</goal>
+                              </goals>
+                          </execution>
+                      </executions>
+                  </plugin>
+              </plugins>
+          </build>
+      </profile>
   </profiles>
 </project>
