@@ -5,21 +5,19 @@
    <parent>
         <groupId>org.kasource</groupId>
         <artifactId>java-base-pom</artifactId>
-        <version>0.1</version>
+        <version>0.3</version>
     </parent>
 
     <artifactId>java-8-qa-pom</artifactId>
     <version>0.3-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>QA-Parent</name>
+    <name>QA-Parent-Java-8</name>
     <description>The Quality Assurance parent pom for Java 8 Projects</description>
 
     <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <qa-rules.version>0.2</qa-rules.version>
+        <jdk.version>8</jdk.version>
+        <qa-rules.version>0.3</qa-rules.version>
     </properties>
 
     <scm>
