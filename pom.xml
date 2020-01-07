@@ -17,7 +17,7 @@
 
     <properties>
         <jdk.version>8</jdk.version>
-        <qa-rules.version>0.3</qa-rules.version>
+        <qa-rules.version>0.4</qa-rules.version>
     </properties>
 
     <scm>
