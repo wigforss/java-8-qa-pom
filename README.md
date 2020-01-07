@@ -5,7 +5,15 @@
 ![](https://img.shields.io/badge/JDK-8%20or%20lesser-d6a827)
 ![](https://github.com/wigforss/java-8-qa-pom/workflows/Test%20and%20Deploy/badge.svg)
 
-QA parent POM for Java 8 and lesser projects.
+Quality Assurance parent POM for Java 8 and lesser projects.
+
+```
+<parent>
+    <groupId>org.kasource</groupId>
+    <artifactId>java-8-qa-pom</artifactId>
+    <version>0.3</version>
+</parent>
+```
 
 Runs QA tools when the system property **run.qa** is set to true.
 
