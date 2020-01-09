@@ -8,15 +8,14 @@
         <version>0.3</version>
     </parent>
 
-    <artifactId>java-8-qa-pom</artifactId>
+    <artifactId>java-qa-pom</artifactId>
     <version>0.5-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>QA-Parent-Java-8</name>
-    <description>The Quality Assurance parent pom for Java 8 Projects</description>
+    <name>QA-Parent-Java</name>
+    <description>The Quality Assurance parent pom for Java Projects</description>
 
     <properties>
-        <jdk.version>8</jdk.version>
         <qa-rules.version>0.4</qa-rules.version>
     </properties>
 
