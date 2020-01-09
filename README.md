@@ -9,7 +9,7 @@ Quality Assurance parent POM for Java 8 and lesser projects.
 ```
 <parent>
     <groupId>org.kasource</groupId>
-    <artifactId>java-8-qa-pom</artifactId>
+    <artifactId>java-qa-pom</artifactId>
     <version>0.3</version>
 </parent>
 ```
