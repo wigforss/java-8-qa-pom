@@ -2,8 +2,7 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) 
 ![](https://img.shields.io/badge/Package-JAR-2396ad)
 ![](https://img.shields.io/badge/Repository-Maven%20Central-2396ad)  
-![](https://img.shields.io/badge/JDK-8%20or%20lesser-d6a827)
-![](https://github.com/wigforss/java-8-qa-pom/workflows/Test%20and%20Deploy/badge.svg)
+![](https://github.com/wigforss/java-qa-pom/workflows/Test%20and%20Deploy/badge.svg)
 
 Quality Assurance parent POM for Java 8 and lesser projects.
 
