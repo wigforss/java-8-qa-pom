@@ -5,18 +5,18 @@
    <parent>
         <groupId>org.kasource</groupId>
         <artifactId>java-base-pom</artifactId>
-        <version>0.3</version>
+        <version>0.4</version>
     </parent>
 
     <artifactId>java-qa-pom</artifactId>
-    <version>0.5-SNAPSHOT</version>
+    <version>0.6-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>QA-Parent-Java</name>
     <description>The Quality Assurance parent pom for Java Projects</description>
 
     <properties>
-        <qa-rules.version>0.4</qa-rules.version>
+        <qa-rules.version>0.5</qa-rules.version>
     </properties>
 
     <scm>
