@@ -9,7 +9,7 @@
     </parent>
 
     <artifactId>java-qa-pom</artifactId>
-    <version>0.6-SNAPSHOT</version>
+    <version>0.7-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>QA-Parent-Java</name>
