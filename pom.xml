@@ -9,14 +9,14 @@
     </parent>
 
     <artifactId>java-qa-pom</artifactId>
-    <version>0.6-SNAPSHOT</version>
+    <version>0.7-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>QA-Parent-Java</name>
     <description>The Quality Assurance parent pom for Java Projects</description>
 
     <properties>
-        <qa-rules.version>0.5</qa-rules.version>
+        <qa-rules.version>0.6</qa-rules.version>
     </properties>
 
     <scm>
