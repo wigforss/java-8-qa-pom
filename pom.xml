@@ -9,7 +9,7 @@
     </parent>
 
     <artifactId>java-qa-pom</artifactId>
-    <version>0.9-SNAPSHOT</version>
+    <version>0.9</version>
     <packaging>pom</packaging>
 
     <name>QA-Parent-Java</name>
@@ -23,7 +23,7 @@
         <connection>${scm.connection.url}</connection>
         <developerConnection>${scm.connection.url}</developerConnection>
         <url>${scm.url}</url>
-        <tag>HEAD</tag>
+        <tag>java-qa-pom-0.9</tag>
     </scm>
 
 
